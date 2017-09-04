@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.strhib.pojo">
+    <class name="Product" table="product_">
+        <!--表属性-->
+        <id name="id" type="int" column="id">
+            <!--表数据生成器，native代表按数据库设置生成（charSet）-->
+            <generator class="native">
+            </generator>
+        </id>
+        <property name="name" type="java.lang.String" column="name" />
+        <property name="price" type="java.lang.Float" column="price"/>
+    </class>
+
+</hibernate-mapping>
